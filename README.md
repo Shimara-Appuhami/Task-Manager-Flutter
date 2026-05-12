@@ -7,7 +7,7 @@ It includes:
 - A login screen with demo credentials
 - A todo list built with `flutter_bloc`
 - Add, complete, delete, and clear completed tasks
-- Local persistence so tasks remain after reopening the app
+
 
 ## What This App Does
 
@@ -33,7 +33,6 @@ This project does not currently use a backend API for todo data.
 - On mobile/desktop, todos are stored locally using secure storage
 - On web, todos are stored in browser cookies
 
-That means the data is local to the device/browser and is not shared across users or devices.
 
 ## Prerequisites
 
@@ -92,18 +91,6 @@ flutter run -d android
 
 If you have multiple devices connected, use the exact device id from `flutter devices`.
 
-## Build Commands
-
-Build an Android APK:
-
-```powershell
-flutter build apk
-```
-
-Build a web release:
-
-```powershell
-flutter build web
 ```
 
 ## Generate Code
@@ -131,17 +118,4 @@ lib/
   main.dart   App entry point
 ```
 
-## Current Notes
 
-- The login is hardcoded for demo purposes
-- Todo data is stored locally only
-- No remote authentication or backend integration is implemented yet
-
-## Useful Flutter Commands
-
-```powershell
-flutter clean
-flutter pub get
-flutter analyze
-flutter test
-```
